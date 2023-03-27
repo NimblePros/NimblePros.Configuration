@@ -12,7 +12,7 @@ public class TestConfigurationSource : IConfigurationSource
   {
     _data = data;
   }
-  
+
   public IConfigurationProvider Build(IConfigurationBuilder builder)
   {
     return new TestConfigurationProvider(_data);

@@ -1,19 +1,21 @@
+
 using System.Collections.Concurrent;
 
+using Autofac;
+
 using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
 
-using NimblePros.Configuration.Core;
+using NimblePros.Configuration.Autofac;
 
-namespace NimblePros.Configuration.Tests.Core;
+namespace NimblePros.Configuration.Tests.Autofac;
 
-public class ServiceCollectionExtensionsTests
+public class ContainerBuilderExtensionsTests
 {
   [Fact]
   public void AddSingletonConfig()
   {
     // Arrange
-    var serviceCollection = new ServiceCollection();
+    var containerBuilder = new ContainerBuilder();
     var inMemoryCollection = new ConcurrentDictionary<string, string?>
     {
       ["TestKey"] = "Initial"
@@ -21,23 +23,23 @@ public class ServiceCollectionExtensionsTests
     var configuration = SetupConfiguration(inMemoryCollection);
 
     // Act
-    serviceCollection.AddSingletonConfig<TestConfig>(configuration);
-    var serviceProvider = serviceCollection.BuildServiceProvider();
+    containerBuilder.AddSingletonConfig<TestConfig>(configuration);
+    var container = containerBuilder.Build();
 
     TestConfig? config1;
     TestConfig? config2;
 
-    using (var scope1 = serviceProvider.CreateScope())
+    using (var scope1 = container.BeginLifetimeScope())
     {
-      config1 = scope1.ServiceProvider.GetService<TestConfig>();
+      config1 = scope1.Resolve<TestConfig>();
     }
 
     inMemoryCollection["TestKey"] = "Updated";
     configuration.Reload();
 
-    using (var scope2 = serviceProvider.CreateScope())
+    using (var scope2 = container.BeginLifetimeScope())
     {
-      config2 = scope2.ServiceProvider.GetService<TestConfig>();
+      config2 = scope2.Resolve<TestConfig>();
     }
 
     // Assert
@@ -52,7 +54,7 @@ public class ServiceCollectionExtensionsTests
   public void AddScopedConfig()
   {
     // Arrange
-    var serviceCollection = new ServiceCollection();
+    var containerBuilder = new ContainerBuilder();
     var inMemoryCollection = new ConcurrentDictionary<string, string?>
     {
       ["TestKey"] = "Initial"
@@ -60,23 +62,23 @@ public class ServiceCollectionExtensionsTests
     var configuration = SetupConfiguration(inMemoryCollection);
 
     // Act
-    serviceCollection.AddScopedConfig<TestConfig>(configuration);
-    var serviceProvider = serviceCollection.BuildServiceProvider();
+    containerBuilder.AddScopedConfig<TestConfig>(configuration);
+    var container = containerBuilder.Build();
 
     TestConfig? config1;
     TestConfig? config2;
 
-    using (var scope1 = serviceProvider.CreateScope())
+    using (var scope1 = container.BeginLifetimeScope())
     {
-      config1 = scope1.ServiceProvider.GetService<TestConfig>();
+      config1 = scope1.Resolve<TestConfig>();
     }
 
     inMemoryCollection["TestKey"] = "Updated";
     configuration.Reload();
 
-    using (var scope2 = serviceProvider.CreateScope())
+    using (var scope2 = container.BeginLifetimeScope())
     {
-      config2 = scope2.ServiceProvider.GetService<TestConfig>();
+      config2 = scope2.Resolve<TestConfig>();
     }
 
     // Assert
