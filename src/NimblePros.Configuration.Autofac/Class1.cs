@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Options.Core
+namespace NimblePros.Configuration.Autofac
 {
     public class Class1
     {

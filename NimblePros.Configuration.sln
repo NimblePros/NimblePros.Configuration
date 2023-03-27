@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NimblePros.Configuration.Core", "NimblePros.Configuration.Core\NimblePros.Configuration.Core.csproj", "{5A8D102B-9F2A-4699-8CD3-76E3D4DDB6F8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NimblePros.Configuration.Core", "src\NimblePros.Configuration.Core\NimblePros.Configuration.Core.csproj", "{5A8D102B-9F2A-4699-8CD3-76E3D4DDB6F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NimblePros.Configuration.Tests", "NimblePros.Configuration.Tests\NimblePros.Configuration.Tests.csproj", "{755DC904-0D46-489E-8C7C-223CB8A2EDE3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NimblePros.Configuration.Tests", "tests\NimblePros.Configuration.Tests\NimblePros.Configuration.Tests.csproj", "{755DC904-0D46-489E-8C7C-223CB8A2EDE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NimblePros.Configuration.Autofac", "src\NimblePros.Configuration.Autofac\NimblePros.Configuration.Autofac.csproj", "{9C830ADA-95BF-4541-93CA-4CEADC71B801}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,5 +26,9 @@ Global
 		{755DC904-0D46-489E-8C7C-223CB8A2EDE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{755DC904-0D46-489E-8C7C-223CB8A2EDE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{755DC904-0D46-489E-8C7C-223CB8A2EDE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C830ADA-95BF-4541-93CA-4CEADC71B801}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C830ADA-95BF-4541-93CA-4CEADC71B801}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C830ADA-95BF-4541-93CA-4CEADC71B801}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C830ADA-95BF-4541-93CA-4CEADC71B801}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
