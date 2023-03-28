@@ -3,31 +3,32 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NimblePros.Configuration.Core", "src\NimblePros.Configuration.Core\NimblePros.Configuration.Core.csproj", "{5A8D102B-9F2A-4699-8CD3-76E3D4DDB6F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NimblePros.Configuration.Core", "src\NimblePros.Configuration.Core\NimblePros.Configuration.Core.csproj", "{5A8D102B-9F2A-4699-8CD3-76E3D4DDB6F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NimblePros.Configuration.Tests", "tests\NimblePros.Configuration.Tests\NimblePros.Configuration.Tests.csproj", "{755DC904-0D46-489E-8C7C-223CB8A2EDE3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NimblePros.Configuration.Tests", "tests\NimblePros.Configuration.Tests\NimblePros.Configuration.Tests.csproj", "{755DC904-0D46-489E-8C7C-223CB8A2EDE3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NimblePros.Configuration.Autofac", "src\NimblePros.Configuration.Autofac\NimblePros.Configuration.Autofac.csproj", "{9C830ADA-95BF-4541-93CA-4CEADC71B801}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NimblePros.Configuration.Autofac", "src\NimblePros.Configuration.Autofac\NimblePros.Configuration.Autofac.csproj", "{9C830ADA-95BF-4541-93CA-4CEADC71B801}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A9487180-B7A8-46D1-9AF1-ABBCDBC09821}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NimblePros.Configuration.Unity", "src\NimblePros.Configuration.Unity\NimblePros.Configuration.Unity.csproj", "{957B2EC1-5787-4979-A062-ECDE15B568DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NimblePros.Configuration.Unity", "src\NimblePros.Configuration.Unity\NimblePros.Configuration.Unity.csproj", "{957B2EC1-5787-4979-A062-ECDE15B568DF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{56C6B100-3E7E-4BE6-BF3D-CC6DA6E648A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NimblePros.Configuration.Ninject", "src\NimblePros.Configuration.Ninject\NimblePros.Configuration.Ninject.csproj", "{9C963C45-2B18-4EC4-AE47-B60D8ED32031}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NimblePros.Configuration.Ninject", "src\NimblePros.Configuration.Ninject\NimblePros.Configuration.Ninject.csproj", "{9C963C45-2B18-4EC4-AE47-B60D8ED32031}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NimblePros.Configuration.Windsor", "src\NimblePros.Configuration.Windsor\NimblePros.Configuration.Windsor.csproj", "{869F94E6-7F60-4382-8B29-F64F68AEC987}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NimblePros.Configuration.Windsor", "src\NimblePros.Configuration.Windsor\NimblePros.Configuration.Windsor.csproj", "{869F94E6-7F60-4382-8B29-F64F68AEC987}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NimblePros.Configuration.StructureMap", "src\NimblePros.Configuration.StructureMap\NimblePros.Configuration.StructureMap.csproj", "{0DBB46F3-FA81-434F-A918-B3D1AD79AA17}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NimblePros.Configuration.StructureMap", "src\NimblePros.Configuration.StructureMap\NimblePros.Configuration.StructureMap.csproj", "{0DBB46F3-FA81-434F-A918-B3D1AD79AA17}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NimblePros.Configuration", "src\NimblePros.Configuration\NimblePros.Configuration.csproj", "{9F5B6343-840B-40FE-88F2-40330D36926D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NimblePros.Configuration.Legacy.Tests", "tests\NimblePros.Configuration.Legacy.Tests\NimblePros.Configuration.Legacy.Tests.csproj", "{5DE93FC3-EC34-4428-95A4-E6BEEFF1371B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{5A8D102B-9F2A-4699-8CD3-76E3D4DDB6F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -58,14 +59,27 @@ Global
 		{0DBB46F3-FA81-434F-A918-B3D1AD79AA17}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0DBB46F3-FA81-434F-A918-B3D1AD79AA17}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0DBB46F3-FA81-434F-A918-B3D1AD79AA17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F5B6343-840B-40FE-88F2-40330D36926D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F5B6343-840B-40FE-88F2-40330D36926D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F5B6343-840B-40FE-88F2-40330D36926D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F5B6343-840B-40FE-88F2-40330D36926D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DE93FC3-EC34-4428-95A4-E6BEEFF1371B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DE93FC3-EC34-4428-95A4-E6BEEFF1371B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DE93FC3-EC34-4428-95A4-E6BEEFF1371B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DE93FC3-EC34-4428-95A4-E6BEEFF1371B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{755DC904-0D46-489E-8C7C-223CB8A2EDE3} = {56C6B100-3E7E-4BE6-BF3D-CC6DA6E648A3}
 		{5A8D102B-9F2A-4699-8CD3-76E3D4DDB6F8} = {A9487180-B7A8-46D1-9AF1-ABBCDBC09821}
+		{755DC904-0D46-489E-8C7C-223CB8A2EDE3} = {56C6B100-3E7E-4BE6-BF3D-CC6DA6E648A3}
 		{9C830ADA-95BF-4541-93CA-4CEADC71B801} = {A9487180-B7A8-46D1-9AF1-ABBCDBC09821}
 		{957B2EC1-5787-4979-A062-ECDE15B568DF} = {A9487180-B7A8-46D1-9AF1-ABBCDBC09821}
 		{9C963C45-2B18-4EC4-AE47-B60D8ED32031} = {A9487180-B7A8-46D1-9AF1-ABBCDBC09821}
 		{869F94E6-7F60-4382-8B29-F64F68AEC987} = {A9487180-B7A8-46D1-9AF1-ABBCDBC09821}
 		{0DBB46F3-FA81-434F-A918-B3D1AD79AA17} = {A9487180-B7A8-46D1-9AF1-ABBCDBC09821}
+		{9F5B6343-840B-40FE-88F2-40330D36926D} = {A9487180-B7A8-46D1-9AF1-ABBCDBC09821}
+		{5DE93FC3-EC34-4428-95A4-E6BEEFF1371B} = {56C6B100-3E7E-4BE6-BF3D-CC6DA6E648A3}
 	EndGlobalSection
 EndGlobal

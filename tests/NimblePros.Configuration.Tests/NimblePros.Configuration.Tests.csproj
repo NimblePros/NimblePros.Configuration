@@ -36,5 +36,6 @@
     <ProjectReference Include="..\..\src\NimblePros.Configuration.Ninject\NimblePros.Configuration.Ninject.csproj" />
     <ProjectReference Include="..\..\src\NimblePros.Configuration.Windsor\NimblePros.Configuration.Windsor.csproj" />
     <ProjectReference Include="..\..\src\NimblePros.Configuration.StructureMap\NimblePros.Configuration.StructureMap.csproj" />
+    <ProjectReference Include="..\..\src\NimblePros.Configuration\NimblePros.Configuration.csproj" />
   </ItemGroup>
 </Project>

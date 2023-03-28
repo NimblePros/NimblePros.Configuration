@@ -2,6 +2,7 @@ using System.Collections.Concurrent;
 
 using NimblePros.Configuration.StructureMap;
 using NimblePros.Configuration.Tests.Helpers;
+
 using StructureMap;
 
 namespace NimblePros.Configuration.Tests.StructureMap;

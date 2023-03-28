@@ -19,7 +19,8 @@ namespace NimblePros.Configuration.StructureMap
     public static IContainer AddScopedConfig<T>(this IContainer container, IConfiguration configuration)
         where T : class, new()
     {
-      container.Configure(c => c.For<T>().ContainerScoped().Use("ContainerScopedConfiguration", () => {
+      container.Configure(c => c.For<T>().ContainerScoped().Use("ContainerScopedConfiguration", () =>
+      {
         var config = new T();
         configuration.Bind(config);
         return config;
