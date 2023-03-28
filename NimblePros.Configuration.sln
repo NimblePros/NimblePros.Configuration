@@ -1,4 +1,4 @@
-
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
@@ -14,6 +14,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NimblePros.Configuration.Unity", "src\NimblePros.Configuration.Unity\NimblePros.Configuration.Unity.csproj", "{957B2EC1-5787-4979-A062-ECDE15B568DF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{56C6B100-3E7E-4BE6-BF3D-CC6DA6E648A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NimblePros.Configuration.Ninject", "src\NimblePros.Configuration.Ninject\NimblePros.Configuration.Ninject.csproj", "{9C963C45-2B18-4EC4-AE47-B60D8ED32031}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -40,11 +42,16 @@ Global
 		{957B2EC1-5787-4979-A062-ECDE15B568DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{957B2EC1-5787-4979-A062-ECDE15B568DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{957B2EC1-5787-4979-A062-ECDE15B568DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C963C45-2B18-4EC4-AE47-B60D8ED32031}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C963C45-2B18-4EC4-AE47-B60D8ED32031}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C963C45-2B18-4EC4-AE47-B60D8ED32031}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C963C45-2B18-4EC4-AE47-B60D8ED32031}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{755DC904-0D46-489E-8C7C-223CB8A2EDE3} = {56C6B100-3E7E-4BE6-BF3D-CC6DA6E648A3}
 		{5A8D102B-9F2A-4699-8CD3-76E3D4DDB6F8} = {A9487180-B7A8-46D1-9AF1-ABBCDBC09821}
 		{9C830ADA-95BF-4541-93CA-4CEADC71B801} = {A9487180-B7A8-46D1-9AF1-ABBCDBC09821}
 		{957B2EC1-5787-4979-A062-ECDE15B568DF} = {A9487180-B7A8-46D1-9AF1-ABBCDBC09821}
+		{9C963C45-2B18-4EC4-AE47-B60D8ED32031} = {A9487180-B7A8-46D1-9AF1-ABBCDBC09821}
 	EndGlobalSection
 EndGlobal
