@@ -51,7 +51,7 @@ public class KernelExtensionsTests
     var configuration = inMemoryCollection.SetupConfiguration();
 
     // Act
-    kernel.AddScopedConfig<TestConfig>(configuration);
+    kernel.AddTransientConfig<TestConfig>(configuration);
 
     var config1 = kernel.Get<TestConfig>();
 

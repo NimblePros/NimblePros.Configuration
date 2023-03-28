@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NimblePros.Configuration.Ni
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NimblePros.Configuration.Windsor", "src\NimblePros.Configuration.Windsor\NimblePros.Configuration.Windsor.csproj", "{869F94E6-7F60-4382-8B29-F64F68AEC987}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NimblePros.Configuration.StructureMap", "src\NimblePros.Configuration.StructureMap\NimblePros.Configuration.StructureMap.csproj", "{0DBB46F3-FA81-434F-A918-B3D1AD79AA17}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -52,6 +54,10 @@ Global
 		{869F94E6-7F60-4382-8B29-F64F68AEC987}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{869F94E6-7F60-4382-8B29-F64F68AEC987}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{869F94E6-7F60-4382-8B29-F64F68AEC987}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DBB46F3-FA81-434F-A918-B3D1AD79AA17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DBB46F3-FA81-434F-A918-B3D1AD79AA17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DBB46F3-FA81-434F-A918-B3D1AD79AA17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DBB46F3-FA81-434F-A918-B3D1AD79AA17}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{755DC904-0D46-489E-8C7C-223CB8A2EDE3} = {56C6B100-3E7E-4BE6-BF3D-CC6DA6E648A3}
@@ -60,5 +66,6 @@ Global
 		{957B2EC1-5787-4979-A062-ECDE15B568DF} = {A9487180-B7A8-46D1-9AF1-ABBCDBC09821}
 		{9C963C45-2B18-4EC4-AE47-B60D8ED32031} = {A9487180-B7A8-46D1-9AF1-ABBCDBC09821}
 		{869F94E6-7F60-4382-8B29-F64F68AEC987} = {A9487180-B7A8-46D1-9AF1-ABBCDBC09821}
+		{0DBB46F3-FA81-434F-A918-B3D1AD79AA17} = {A9487180-B7A8-46D1-9AF1-ABBCDBC09821}
 	EndGlobalSection
 EndGlobal

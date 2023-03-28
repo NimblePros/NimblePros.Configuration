@@ -14,6 +14,7 @@
     <PackageReference Include="FluentAssertions" Version="6.10.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.3.2" />
     <PackageReference Include="Ninject" Version="3.3.6" />
+    <PackageReference Include="StructureMap" Version="4.7.1" />
     <PackageReference Include="Unity" Version="5.11.10" />
     <PackageReference Include="xunit" Version="2.4.2" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.5">
@@ -34,5 +35,6 @@
     <ProjectReference Include="..\..\src\NimblePros.Configuration.Unity\NimblePros.Configuration.Unity.csproj" />
     <ProjectReference Include="..\..\src\NimblePros.Configuration.Ninject\NimblePros.Configuration.Ninject.csproj" />
     <ProjectReference Include="..\..\src\NimblePros.Configuration.Windsor\NimblePros.Configuration.Windsor.csproj" />
+    <ProjectReference Include="..\..\src\NimblePros.Configuration.StructureMap\NimblePros.Configuration.StructureMap.csproj" />
   </ItemGroup>
 </Project>

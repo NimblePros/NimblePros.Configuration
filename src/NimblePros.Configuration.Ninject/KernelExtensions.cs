@@ -18,7 +18,7 @@ namespace NimblePros.Configuration.Ninject
       return kernel.Bind<T>().ToConstant(config);
     }
 
-    public static IBindingNamedWithOrOnSyntax<T> AddScopedConfig<T>(
+    public static IBindingNamedWithOrOnSyntax<T> AddTransientConfig<T>(
         this IKernel kernel,
         IConfiguration configuration
     )
