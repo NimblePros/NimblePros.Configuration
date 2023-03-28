@@ -2,7 +2,7 @@ using System.Collections.Concurrent;
 
 using Microsoft.Extensions.Configuration;
 
-namespace NimblePros.Configuration.Tests;
+namespace NimblePros.Configuration.Tests.Helpers;
 
 public class TestConfigurationProvider : ConfigurationProvider
 {

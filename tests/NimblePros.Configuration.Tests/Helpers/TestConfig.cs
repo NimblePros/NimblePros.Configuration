@@ -1,4 +1,4 @@
-namespace NimblePros.Configuration.Tests;
+namespace NimblePros.Configuration.Tests.Helpers;
 
 public class TestConfig
 {

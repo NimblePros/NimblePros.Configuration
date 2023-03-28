@@ -1,11 +1,9 @@
-
 using System.Collections.Concurrent;
 
 using Autofac;
 
-using Microsoft.Extensions.Configuration;
-
 using NimblePros.Configuration.Autofac;
+using NimblePros.Configuration.Tests.Helpers;
 
 namespace NimblePros.Configuration.Tests.Autofac;
 
@@ -20,7 +18,7 @@ public class ContainerBuilderExtensionsTests
     {
       ["TestKey"] = "Initial"
     };
-    var configuration = SetupConfiguration(inMemoryCollection);
+    var configuration = inMemoryCollection.SetupConfiguration();
 
     // Act
     containerBuilder.AddSingletonConfig<TestConfig>(configuration);
@@ -59,7 +57,7 @@ public class ContainerBuilderExtensionsTests
     {
       ["TestKey"] = "Initial"
     };
-    var configuration = SetupConfiguration(inMemoryCollection);
+    var configuration = inMemoryCollection.SetupConfiguration();
 
     // Act
     containerBuilder.AddScopedConfig<TestConfig>(configuration);
@@ -87,13 +85,5 @@ public class ContainerBuilderExtensionsTests
     config2.Should().NotBeNull();
     config2?.TestKey.Should().Be("Updated");
     config1.Should().NotBeSameAs(config2);
-  }
-
-  private static IConfigurationRoot SetupConfiguration(ConcurrentDictionary<string, string?> inMemoryCollection)
-  {
-    var configurationBuilder = new ConfigurationBuilder();
-    var testConfigurationSource = new TestConfigurationSource(inMemoryCollection);
-    configurationBuilder.Add(testConfigurationSource);
-    return configurationBuilder.Build();
   }
 }
