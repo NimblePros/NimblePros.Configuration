@@ -87,9 +87,9 @@ public class MyController : Controller
         return View(_mySettings);
     }
 }
+```
 
 Your IOC container will automatically resolve the `MySettings` instance and inject it into the controller.
-```
 
 ### .NET Framework
 
