@@ -109,7 +109,6 @@ builder with Autofac, use the following code:
 var builder = new ContainerBuilder();
 
 // Part of Microsoft.Extensions.Configuration
-// Depending on your project, you may not need to create and configure a new instance of ConfigurationBuilder
 var configurationBuilder = new ConfigurationBuilder();
 var configuration = configurationBuilder.AddLegacyConfiguration().Build();
                                                 ^
