@@ -130,7 +130,7 @@ var container = containerBuilder.Build();
 - [StructureMap](http://structuremap.github.io/) - NimblePros.Configuration.StructureMap
 - [Unity](http://unitycontainer.org/) - NimblePros.Configuration.Unity
 
-To use NimblePros.Configuraiton with a specific IoC container, install the corresponding NuGet package, and follow
+To use NimblePros.Configuration with a specific IoC container, install the corresponding NuGet package, and follow
 the container-specific integration steps provided in the package documentation.
 
 ## Contributing
